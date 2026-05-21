@@ -1,0 +1,9 @@
+export { Hero } from "./hero";
+export { CaseStudySection } from "./case-study-section";
+export { ProblemSection } from "./problem-section";
+export { ProcessSection } from "./process-section";
+export { ProofBar } from "./proof-bar";
+export { IndustrySection } from "./industry-section";
+export { BlueprintSection } from "./blueprint-section";
+export { FAQSection } from "./faq-section";
+export { CTASection } from "./cta-section";
