@@ -8,13 +8,18 @@ export function Hero() {
       <div className="container-default py-12">
         <div className="mx-auto max-w-3xl text-center">
           {/* Headline */}
-          <h1 className="text-display mb-8 text-foreground text-balance">
+          <h1 className="text-display mb-12 text-foreground text-balance">
             {hero.headline}
           </h1>
 
           {/* Subheadline */}
-          <p className="text-body-lg mx-auto mb-10 max-w-2xl text-pretty">
+          <p className="text-body-lg mx-auto mb-3 text-pretty">
             {hero.subheadline}
+          </p>
+
+          {/* Audience qualifier */}
+          <p className="text-body-sm mx-auto mb-14 max-w-xl text-muted-foreground/70 text-pretty">
+            {hero.qualifier}
           </p>
 
           {/* CTAs */}
@@ -32,14 +37,9 @@ export function Hero() {
               size="lg"
               className="w-full sm:w-auto h-12 px-8 text-base"
             >
-              <Link href="#sample">{hero.secondaryCta}</Link>
+              <Link href="#inside">{hero.secondaryCta}</Link>
             </Button>
           </div>
-
-          {/* Qualifier */}
-          <p className="mt-8 text-body-sm italic text-muted-foreground">
-            {hero.qualifier}
-          </p>
         </div>
       </div>
     </section>

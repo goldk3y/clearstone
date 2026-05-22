@@ -1,58 +1,41 @@
 import { Section } from "@/components/layout";
 import { whyThree } from "@/content/home";
-import { cn } from "@/lib/utils";
 
 export function WhyThree() {
   return (
-    <Section id="why-three" container="default" padding="default" background="muted">
+    <Section id="why-three" container="default" padding="default">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-h2 mb-6 text-foreground text-balance">
           {whyThree.headline}
         </h2>
-        <p className="text-body-lg mb-12 max-w-2xl text-pretty">
+        <p className="text-body-lg mb-4 text-pretty font-medium text-foreground">
           {whyThree.intro}
         </p>
+        <p className="text-body-lg mb-12 text-pretty">
+          {whyThree.detail}
+        </p>
 
-        {/* Moves breakdown */}
-        <div className="space-y-6">
-          {whyThree.moves.map((move, index) => (
-            <div
-              key={index}
-              className={cn(
-                "flex items-baseline gap-4",
-                move.emphasis && "text-foreground"
-              )}
-            >
-              <span
-                className={cn(
-                  "text-5xl font-bold tabular-nums sm:text-6xl md:text-7xl",
-                  move.emphasis ? "text-brand" : "text-muted-foreground/40"
-                )}
-              >
-                {move.number === "One" ? "1" : move.number === "Five" ? "5" : "3"}
-              </span>
-              <div>
-                <span
-                  className={cn(
-                    "text-h3",
-                    move.emphasis ? "text-foreground" : "text-muted-foreground"
-                  )}
-                >
-                  <span className="font-semibold">{move.number}</span>{" "}
-                  <span className="font-normal">{move.label}</span>
-                </span>
-                <span
-                  className={cn(
-                    "ml-2 text-body-lg",
-                    move.emphasis ? "text-foreground" : "text-muted-foreground"
-                  )}
-                >
-                  {move.description}
-                </span>
+        {/* Criteria */}
+        <div className="mb-10">
+          <h3 className="text-h4 mb-6 text-foreground">
+            {whyThree.criteria.title}
+          </h3>
+          <div className="space-y-6">
+            {whyThree.criteria.items.map((item, index) => (
+              <div key={index}>
+                <p className="text-body-lg text-pretty">
+                  <span className="font-semibold text-foreground">{item.label}</span>
+                  <br />
+                  <span className="text-muted-foreground">{item.description}</span>
+                </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        <p className="text-body-lg font-medium text-foreground">
+          {whyThree.closing}
+        </p>
       </div>
     </Section>
   );

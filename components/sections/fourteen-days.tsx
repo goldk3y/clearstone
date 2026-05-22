@@ -36,7 +36,8 @@ export function FourteenDays() {
                 {/* Day label - shown on mobile only */}
                 <span className="text-label text-foreground mb-1 block md:hidden">{step.day}</span>
                 <h3 className="text-h4 mb-2 text-foreground">{step.title}</h3>
-                <p className="text-body max-w-lg">{step.description}</p>
+                <p className="text-body mb-2">{step.description}</p>
+                <p className="text-body-sm text-brand font-medium">{step.output}</p>
               </div>
             </div>
           ))}

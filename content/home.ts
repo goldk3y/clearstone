@@ -12,224 +12,294 @@ export const siteConfig = {
 // Section 1: Hero
 // =============================================================================
 export const hero = {
-  headline: "Three AI moves. Fourteen days. Fixed fee.",
+  headline: "Find the three AI projects worth building first.",
   subheadline:
-    "A 14-day, fixed-fee diagnostic. Three AI investments most likely to pay back inside 90 days, with the workflows, vendors, and build plan to ship them.",
-  primaryCta: "Find Your Three AI Moves",
-  secondaryCta: "See a Sample Blueprint",
-  qualifier: "For founder-led companies, $25M–$100M, with enough operational complexity that \"where do we start with AI\" is a real question.",
+    "In 14 days, ClearStone maps how work moves through your business, identifies the automation opportunities most likely to save time or increase revenue, and turns them into a build-ready AI Opportunity Blueprint.",
+  qualifier:
+    "For 10-100 employee companies with manual workflows and no internal AI team.",
+  primaryCta: "Book a Blueprint Fit Call",
+  secondaryCta: "See What's Included",
 } as const;
 
 // =============================================================================
 // Section 2: The Mirror (Problem Framing)
 // =============================================================================
 export const mirror = {
-  headline: "You bought the tools. Nothing's connected.",
-  paragraphs: [
-    "ChatGPT licenses are in expense reports. Copilot is on someone's laptop. A vendor pitched you an agent that would do \"everything\" and you couldn't tell if it was real.",
-    "Your team is using AI in the shadows. Your board is asking what your AI strategy is. Your CFO wants a number.",
-    "You've sat through three pitch decks this quarter. None of them gave you a P&L line.",
+  headline: "Your team already has AI tools. The work still runs manually.",
+  intro: "ChatGPT. Zapier. A CRM. Spreadsheets. Project management software. Maybe a few half-built automations.",
+  bridge: "But the work still runs through people.",
+  symptoms: [
+    "Leads still get copied by hand.",
+    "Reports still take hours.",
+    "Follow-ups still depend on memory.",
+    "Customer data still lives across too many systems.",
+    "The same information still gets retyped into the same places every week.",
   ],
+  conclusion: "The problem is not that you need more tools. The problem is that nobody has mapped where automation fits in the operation.",
 } as const;
 
 // =============================================================================
 // Section 3: The Stakes (Market Evidence)
 // =============================================================================
 export const stakes = {
-  headline: "Most AI programs don't ship.",
-  paragraphs: [
-    "Of the companies that launched AI initiatives last year, only about 1 in 20 produced measurable P&L impact. The rest are stuck in pilot purgatory, vendor sprawl, or strategy decks nobody acts on.",
-    "The companies that crossed the line had one thing in common: they picked a small number of high-leverage workflows, built them, and shipped them. They didn't try to \"transform.\" They made moves.",
+  headline: "Most AI projects die between the demo and the workflow.",
+  intro: "They usually break in one of four places:",
+  failures: [
+    {
+      title: "Too many ideas.",
+      description:
+        "Everyone has a use case. Nobody knows which one is worth building.",
+    },
+    {
+      title: "No workflow map.",
+      description:
+        "The team talks about automation before understanding how the work actually happens.",
+    },
+    {
+      title: "No owner.",
+      description:
+        "The project sounds exciting, but nobody is accountable for getting it live.",
+    },
+    {
+      title: "No build path.",
+      description:
+        "The company gets strategy, but not the sequence of decisions needed to implement.",
+    },
   ],
-  citation:
-    "Sources: MIT NANDA, State of AI in Business 2025; McKinsey, State of AI 2025; BCG AI Radar 2026.",
+  conclusion: "ClearStone exists to fix that gap.",
 } as const;
 
 // =============================================================================
 // Section 4: The Blueprint (Offer)
 // =============================================================================
 export const blueprint = {
-  headline: "The 3-Move Blueprint",
+  headline: "The AI Opportunity Blueprint",
   description:
-    "A 14-day, fixed-fee diagnostic that ends with three named AI investments, ranked by 90-day ROI, with the workflows, vendors, integration plan, and build roadmap to execute.",
-  whatYouGet: {
-    title: "What you get",
+    "A focused 14-day sprint that turns scattered automation ideas into three build-ready projects.",
+  detail:
+    "We study how your business actually runs, identify the workflows where automation can create measurable leverage, and package the best opportunities into a clear implementation roadmap.",
+  outcomes: {
+    title: "At the end, you know:",
     items: [
-      "A 25–35 page Blueprint document, written for the CEO and CFO, with three prioritized moves",
-      "Workflow-level diagrams of where AI fits in your current operation",
-      "Vendor-or-build recommendations for each move, with named tools and dollar figures",
-      "A risk-adjusted dollar ROI model per move, with assumptions you can audit",
-      "A 90-day implementation Gantt for each move",
-      "A 60-minute walkthrough with your leadership team",
-      "A fixed-fee implementation proposal, valid for 30 days",
+      "What to build first",
+      "Why it matters",
+      "What workflow it improves",
+      "Which tools or systems are involved",
+      "What data is needed",
+      "Who should own it",
+      "What the implementation path looks like",
+      "What tradeoffs to expect",
     ],
   },
-  whatYouDontGet: {
-    title: "What you don't get",
-    items: [
-      "A 200-page deck",
-      "Generic \"AI strategy\" frameworks",
-      "A list of vendors with affiliate links",
-      "\"AI maturity scores\"",
-      "Three weeks of discovery before any work starts",
-    ],
-  },
+  closing: "The Blueprint is a decision document your team can use to decide what to build, what not to build, who owns it, what it requires, and what happens next.",
 } as const;
 
 // =============================================================================
-// Section 5: Why Three (Mechanism)
+// Section 5: Sample Outputs (New - Example Projects)
 // =============================================================================
-export interface WhyThreeMove {
-  number: string;
-  label: string;
-  description: string;
-  emphasis?: boolean;
-}
-
-export const whyThree = {
-  headline: "Why three?",
-  intro:
-    "Not because three is a magic number. Because three is the smallest number that demonstrates a program, and the largest number a mid-market team can actually ship in 90 days.",
-  moves: [
+export const sampleOutputs = {
+  headline: "Sample outputs from a Blueprint",
+  intro: "These are the kinds of projects we might identify:",
+  examples: [
     {
-      number: "One",
-      label: "move",
-      description: "isn't a strategy. It's a project.",
+      title: "Lead intake automation",
+      description:
+        "Reduce response time by routing inbound leads, enriching company records, assigning owners, and drafting first replies.",
     },
     {
-      number: "Five",
-      label: "moves",
-      description: "is a roadmap. Roadmaps don't ship.",
+      title: "Weekly ops report",
+      description:
+        "Replace manual reporting with an automated summary of sales, service, and operational exceptions.",
     },
     {
-      number: "Three",
-      label: "moves",
-      description: "ships, measures, and earns the next round.",
-      emphasis: true,
-    },
-  ] as WhyThreeMove[],
-} as const;
-
-// =============================================================================
-// Section 6: Inside the Blueprint (Visual Deliverable)
-// =============================================================================
-export const insideBlueprint = {
-  headline: "Inside the Blueprint",
-  intro: "The Blueprint is the deliverable. Here's what's actually in one.",
-  pages: [
-    {
-      id: "executive-summary",
-      title: "Executive Summary",
-      caption: "Three moves named, dollar impact, timeline",
-      alt: "Blueprint executive summary page showing three prioritized AI moves with ROI figures",
-    },
-    {
-      id: "workflow-diagram",
-      title: "Workflow Diagram",
-      caption: "Before/after of one workflow",
-      alt: "Blueprint workflow diagram showing current state and AI-enhanced future state",
-    },
-    {
-      id: "vendor-analysis",
-      title: "Vendor Analysis",
-      caption: "Three vendors evaluated against criteria",
-      alt: "Blueprint vendor comparison table with scoring matrix",
-    },
-    {
-      id: "roi-model",
-      title: "ROI Model",
-      caption: "Assumptions, sensitivities, 90-day curve",
-      alt: "Blueprint ROI model with assumptions and projected savings",
-    },
-    {
-      id: "implementation-gantt",
-      title: "Implementation Gantt",
-      caption: "Week-by-week milestones",
-      alt: "Blueprint 90-day implementation timeline with milestones",
+      title: "Customer follow-up system",
+      description:
+        "Trigger follow-ups based on missed replies, stale opportunities, completed jobs, or customer status changes.",
     },
   ],
-  disclaimer:
-    "Sample pages from a redacted Blueprint. Full sample available on request.",
 } as const;
 
 // =============================================================================
-// Section 7: The 14 Days (Process)
+// Section 6: Why Three (Mechanism)
+// =============================================================================
+export const whyThree = {
+  headline: "Why only three?",
+  intro: "Because focus beats AI theater.",
+  detail:
+    "A business does not need fifty automation ideas. It needs the few that deserve time, money, and operational attention.",
+  criteria: {
+    title: "We score every opportunity by:",
+    items: [
+      {
+        label: "Impact",
+        description:
+          "Will it save time, reduce cost, increase revenue, or remove operational drag?",
+      },
+      {
+        label: "Feasibility",
+        description:
+          "Can it be built with your current systems, data, and team?",
+      },
+      {
+        label: "Speed",
+        description: "Can it reach a useful first version quickly?",
+      },
+    ],
+  },
+  closing:
+    "The goal is not to prove automation can be used everywhere. The goal is to find where it should be used first.",
+} as const;
+
+// =============================================================================
+// Section 7: Inside the Blueprint (Visual Deliverable)
+// =============================================================================
+export const insideBlueprint = {
+  headline: "What you get inside the Blueprint",
+  deliverables: [
+    {
+      id: "workflow-map",
+      title: "Workflow Map",
+      question: "Where is time being lost?",
+      description:
+        "A clear map of the workflows, handoffs, bottlenecks, repeated tasks, and manual decisions inside the business.",
+    },
+    {
+      id: "opportunity-scorecard",
+      title: "Opportunity Scorecard",
+      question: "Which ideas are actually worth considering?",
+      description:
+        "A ranked list of opportunities scored by impact, feasibility, speed, risk, and dependency.",
+    },
+    {
+      id: "three-moves",
+      title: "Three Priority Projects",
+      question: "What should we build first?",
+      description:
+        "The three highest-confidence projects, with the business case and reasoning behind each recommendation.",
+    },
+    {
+      id: "recommended-stack",
+      title: "Recommended Stack",
+      question: "What tools and integrations are needed?",
+      description:
+        "The recommended tools, integrations, data sources, and technical approach for each project.",
+    },
+    {
+      id: "implementation-plan",
+      title: "Implementation Roadmap",
+      question: "How do we get this live?",
+      description:
+        "A phased plan with owners, dependencies, risks, and next steps.",
+    },
+  ],
+} as const;
+
+// =============================================================================
+// Section 8: The 14 Days (Process)
 // =============================================================================
 export const fourteenDays = {
   headline: "What happens in 14 days",
   steps: [
     {
       day: "Day 1",
-      title: "Kickoff (90 min)",
+      title: "Kickoff",
       description:
-        "You, your COO, your CFO, and us. We map the business, the stack, and the constraints.",
+        "Define goals, collect context, review current tools, and choose the workflows worth studying.",
+      output: "Inputs collected: tools, workflows, goals, team structure.",
     },
     {
-      day: "Days 2–5",
-      title: "Workflow interviews",
+      day: "Days 2-5",
+      title: "Workflow discovery",
       description:
-        "We talk to your top operators, sales, finance, ops, support. We map current workflows. We surface what's broken and what's costly.",
+        "Interview key operators, review current processes, and map how work actually moves.",
+      output: "Output: current-state workflow map.",
     },
     {
-      day: "Days 6–9",
-      title: "Analysis",
+      day: "Days 6-9",
+      title: "Opportunity scoring",
       description:
-        "We model the candidates. We pressure-test vendor options. We build the ROI cases.",
+        "Identify possible automation projects, remove weak ideas, and rank the strongest opportunities.",
+      output: "Output: ranked opportunity scorecard.",
     },
     {
-      day: "Days 10–13",
-      title: "Drafting",
+      day: "Days 10-12",
+      title: "Blueprint development",
       description:
-        "We write the Blueprint. Three moves. Workflows. Vendors. Dollar models. Implementation plans.",
+        "Turn the top opportunities into detailed project plans with workflow logic, tools, dependencies, and implementation paths.",
+      output: "Output: top three project plans.",
     },
     {
-      day: "Day 14",
-      title: "Walkthrough",
+      day: "Days 13-14",
+      title: "Review and decision",
       description:
-        "60 minutes with you and your team. The Blueprint is yours.",
+        "Walk through the Blueprint, explain the tradeoffs, and help your team decide what to build first.",
+      output: "Output: final Blueprint and recommended next step.",
     },
   ],
 } as const;
 
 // =============================================================================
-// Section 8: The Guarantee
+// Section 9: The Guarantee
 // =============================================================================
 export const guarantee = {
-  headline: "If we can't find three, you don't pay.",
+  headline: "If we cannot find three real opportunities, you do not pay.",
   paragraphs: [
-    "At the end of the diagnostic, if ClearStone has not identified three implementation-ready AI moves that pass your team's internal hurdle rate, the engagement fee is fully refunded.",
-    "No subjective satisfaction clause. No mood test. The bar is simple: three viable moves, or the fee is yours back.",
+    "If we cannot identify at least three projects with a clear workflow, business case, owner, and implementation path, the Blueprint is free.",
+    "That keeps the incentive simple: We only win if we find work worth doing.",
   ],
 } as const;
 
 // =============================================================================
-// Section 9: Already Tried AI? (Pilot Autopsy)
+// Section 10: Without/With Comparison (New)
 // =============================================================================
-export const pilotAutopsy = {
-  headline: "Already tried AI and got nowhere?",
-  description:
-    "Send us the project. We'll write you a free Pilot Autopsy. 30-minute analysis of what stalled and whether it's worth fixing, replacing, or killing.",
-  note: "Most teams who hire us start here.",
-  cta: "Request a Pilot Autopsy",
-  formFields: {
-    company: "Company name",
-    project: "What did you try?",
-    builder: "Who built it?",
-    stalled: "What stalled?",
-  },
-  confirmation:
-    "Thanks. I'll review and send you the Pilot Autopsy within 3 business days.",
+export const comparison = {
+  headline: "Without the Blueprint vs. With the Blueprint",
+  without: [
+    "Dozens of scattered automation ideas",
+    "Tool-first decisions",
+    "Unclear ownership",
+    "Generic strategy",
+    "Risky implementation",
+  ],
+  with: [
+    "Three ranked priorities",
+    "Workflow-first decisions",
+    "Clear owners and dependencies",
+    "Build-ready roadmap",
+    "Sequenced implementation path",
+  ],
 } as const;
 
 // =============================================================================
-// Section 10: Who Built This (Founder)
+// Section 11: Who This Is For
+// =============================================================================
+export const whoIsThisFor = {
+  headline: "Built for companies with real operations.",
+  fitTitle: "ClearStone is a fit if you have:",
+  fitItems: [
+    "10-100 employees",
+    "$2M-$25M in annual revenue",
+    "Repeatable workflows across sales, admin, operations, service, or support",
+    "Manual work that still depends on spreadsheets, inboxes, CRMs, forms, calls, or internal docs",
+    "No internal AI transformation team",
+  ],
+  notFitTitle: "ClearStone is not a fit if you want:",
+  notFitItems: [
+    "A generic AI training session",
+    "A list of trendy tools",
+    "A chatbot demo",
+    "Strategy without operational detail",
+    "Automation before workflow discovery",
+  ],
+} as const;
+
+// =============================================================================
+// Section 12: Who Built This (Founder)
 // =============================================================================
 export interface FounderData {
   name: string;
   role: string;
   bio: string;
-  priorWork: string[];
-  credentials: string[];
   photoUrl?: string;
   linkedInUrl?: string;
 }
@@ -237,128 +307,152 @@ export interface FounderData {
 export const founder: FounderData = {
   name: "Stan Sedberry",
   role: "Founder, ClearStone",
-  bio: "I'm Stan. I've spent the last decade designing, building, and shipping products. The last three of them building AI products and integrating AI into the businesses I run.",
-  priorWork: [],
-  credentials: [],
+  bio: "ClearStone is led by Stan Sedberry, a technical founder and operator who builds AI systems, workflow automations, and software products.",
   photoUrl: "/site-images/founder-headshot.png",
   linkedInUrl: "https://linkedin.com/in/stansedberry",
 };
 
 export const founderSection = {
   headline: "Built by an operator, not a deck shop.",
-  contrast: "AI consultants will give you a strategy deck based on a report they've read. I give you a build-ready blueprint engineered from firsthand experience.",
-  closing: "When you hire ClearStone, you work directly with me. Same person on the kickoff, the Blueprint, and the build.",
-  tagline: "No analysts. No handoffs. No recycled decks.",
+  detail:
+    "That matters because the Blueprint is designed for implementation, not presentation.",
+  intro:
+    "Every recommendation is judged by practical questions:",
+  questions: [
+    "Can this be built?",
+    "Can the team use it?",
+    "What data is required?",
+    "What breaks when this touches real operations?",
+    "What should be built now, later, or never?",
+  ],
 } as const;
 
 // =============================================================================
-// Section 11: Pricing
+// Section 13: Why Blueprint Costs Less (Before Pricing)
+// =============================================================================
+export const whyBlueprintCostsLess = {
+  headline: "Why the Blueprint costs less than guessing.",
+  paragraphs: [
+    "The expensive part of AI is not the software. It is building the wrong thing.",
+    "A bad automation project can waste months of internal time, create fragile systems, confuse the team, and still fail to change the operation.",
+  ],
+  conclusion: "The Blueprint exists to answer the most expensive question first: What should we build?",
+  kicker: "For most companies, one wrong build costs more than the Blueprint.",
+} as const;
+
+// =============================================================================
+// Section 14: Pricing
 // =============================================================================
 export interface PricingTier {
   name: string;
   price: string;
   priceNote?: string;
   description: string;
+  label?: string;
+  includes?: string[];
   note?: string;
+  credit?: string;
 }
 
 export const pricing = {
   headline: "Pricing",
   tiers: [
     {
-      name: "The 3-Move Blueprint",
+      name: "AI Opportunity Blueprint",
       price: "$15,000",
-      description: "Fixed fee. 14 days. Three moves, named and modeled.",
-      note: "The fee is 100% credited toward implementation if you choose to build any of the three moves with ClearStone.",
+      priceNote: "fixed fee",
+      label: "Best first step",
+      description:
+        "For companies that want clarity before investing in implementation.",
+      includes: [
+        "Workflow discovery",
+        "Operator interviews",
+        "Current-state workflow map",
+        "Opportunity scorecard",
+        "Three priority project plans",
+        "Recommended stack",
+        "Implementation roadmap",
+        "Final Blueprint review",
+      ],
+      credit: "If you hire ClearStone to implement one of the recommended projects, $5,000 of the Blueprint fee is credited toward the build.",
     },
     {
       name: "Implementation",
-      price: "$15,000–$100,000",
+      price: "Custom scope",
       description:
-        "Fixed-fee per move, scoped during the Blueprint. Most clients implement one or two; the third often gets handed to their team.",
+        "For companies that want ClearStone to help build one or more projects from the Blueprint.",
+      includes: [
+        "Automation design",
+        "Tool setup",
+        "System integrations",
+        "Workflow buildout",
+        "Testing and rollout",
+        "Team handoff",
+      ],
+      note: "Scoped separately based on complexity, integrations, data requirements, and timeline.",
     },
   ] as PricingTier[],
-  cta: "Find Your Three AI Moves",
+  cta: "Book a Blueprint Fit Call",
 } as const;
 
 // =============================================================================
-// Section 12: FAQ
+// Section 15: FAQ
 // =============================================================================
 export const faq = {
   headline: "Frequently asked questions",
   items: [
     {
-      question: "Who is this for?",
+      question: "Is this just strategy?",
       answer:
-        "Founder-led US companies, roughly $25M–$100M in annual revenue, with enough operational complexity that \"where do we start with AI\" is a real question. Below $25M, you're likely better served by off-the-shelf tools and a Make.com or Zapier freelancer. Above $250M, you may need a larger firm.",
+        "No. The Blueprint is a practical implementation plan: workflows, priorities, stack, dependencies, owners, and next steps.",
     },
     {
-      question: "How is this different from McKinsey, BCG, or Deloitte?",
+      question: "Why not just start building?",
       answer:
-        "For a $500K enterprise transformation? You shouldn't hire us. For mid-market operators, the Big Four pricing model breaks down: a $300K strategy deck on a $50M company is 0.6% of revenue spent on PowerPoint. We deliver the diagnostic for $15,000, and we ship the implementation, not just the deck.",
+        "Because builders usually build what you ask for. The Blueprint determines what is actually worth asking for.",
     },
     {
-      question: "How is this different from an \"AI automation agency\"?",
+      question: "What if we already have automation ideas?",
       answer:
-        "Most AI automation agencies sell tools first and figure out the problem second. We do the opposite, diagnose the three highest-ROI workflows in your business first, then recommend build-or-buy. If the right answer is \"buy this $400/month tool and wire it up,\" we say so.",
+        "Good. We evaluate them against your workflows and rank them against other opportunities.",
     },
     {
-      question: "What if our highest-leverage opportunity isn't actually AI?",
+      question: "Do we need clean data?",
       answer:
-        "We'll tell you. Two of the three moves in a typical Blueprint are usually narrow workflow automations, not LLM agents. If AI isn't the right answer at all, we'll say that before you pay for the Blueprint.",
+        "No. Part of the Blueprint is identifying what data exists, what is missing, and what needs to be cleaned or connected.",
     },
     {
-      question: "We already have a CTO / Head of AI. Where do you fit?",
+      question: "Who needs to be involved?",
       answer:
-        "We work with them, not around them. The Blueprint typically gives your CTO the prioritization artifact they've been trying to write for six months while running everything else.",
+        "Usually the owner or executive sponsor, plus the people closest to the workflows being studied.",
     },
     {
-      question: "We've tried pilots that stalled. How is this different?",
+      question: "How much time does our team need to commit?",
       answer:
-        "Most clients who hire us tried pilots first. Send us the project. We'll write you a free Pilot Autopsy explaining what stalled and whether it's worth fixing, replacing, or killing.",
+        "Usually a kickoff call, a few focused interviews, async document sharing, and a final review. The process is designed to avoid dragging your team through endless discovery.",
     },
     {
-      question: "Will you recommend tools you resell?",
+      question: "Can you implement afterward?",
       answer:
-        "No. ClearStone doesn't resell any software. No affiliate fees, no vendor kickbacks. Half of typical Blueprint recommendations are off-the-shelf tools we have no commercial relationship with.",
+        "Yes. Implementation is scoped separately after the Blueprint.",
     },
     {
-      question: "We're in a regulated industry. Can you work with HIPAA / SOC2 / FINRA?",
+      question: "What if you cannot find three good projects?",
       answer:
-        "Yes, with appropriate controls. Standard mutual NDA on call one. Full DPA before any data review. We work in your environment, your AWS/Azure/GCP, your CRM, your data warehouse. We don't take custody of your data.",
-    },
-    {
-      question: "What does implementation actually look like?",
-      answer:
-        "Fixed-fee per move, $15K–$100K depending on scope, with a defined timeline and acceptance criteria for each move. We can build with your team, hand off to your team, or hand off to one of our certified implementation partners. Your call.",
-    },
-    {
-      question: "Can we share the Blueprint with our board?",
-      answer:
-        "Yes. The Blueprint is written for the CEO and CFO to share with the board. Several sections are explicitly built for board-meeting use.",
-    },
-    {
-      question: "What if we don't proceed to implementation?",
-      answer:
-        "That's a normal outcome. About a third of Blueprint clients implement with us, a third implement with their own team, and a third implement with a hybrid. The Blueprint is yours either way.",
-    },
-    {
-      question: "What if you can't find three opportunities in our business?",
-      answer:
-        "Then you don't pay for the Blueprint. The bar is three implementation-ready moves that pass your team's internal hurdle rate.",
+        "You do not pay. If we cannot identify three specific opportunities with a clear workflow, business case, and implementation path, the Blueprint is free.",
     },
   ],
   stillHaveQuestions: "Still have questions?",
 } as const;
 
 // =============================================================================
-// Section 13: Final CTA
+// Section 16: Final CTA
 // =============================================================================
 export const finalCta = {
-  headline: "Find your three AI moves.",
+  headline: "Know what to build before you spend money building.",
   description:
-    "Book a 30-minute call. We'll figure out if a Blueprint is the right fit. If it isn't, we'll tell you that.",
-  cta: "Book the Call",
+    "Book a 30-minute Blueprint Fit Call. We will learn how your business runs, determine whether the Blueprint is a fit, and recommend the next step.",
+  cta: "Book a Blueprint Fit Call",
   note: "30 minutes. Free. No pitch.",
 } as const;
 
@@ -368,7 +462,7 @@ export const finalCta = {
 export const navigation = {
   links: [
     { href: "#blueprint", label: "Blueprint" },
-    { href: "#inside", label: "Inside" },
+    { href: "#inside", label: "What's Included" },
     { href: "#process", label: "14 Days" },
     { href: "#pricing", label: "Pricing" },
     { href: "#faq", label: "FAQ" },

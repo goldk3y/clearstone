@@ -4,12 +4,15 @@ import {
   Mirror,
   Stakes,
   Blueprint,
+  SampleOutputs,
   WhyThree,
   InsideBlueprint,
   FourteenDays,
   Guarantee,
-  PilotAutopsy,
+  Comparison,
+  WhoIsThisFor,
   Founder,
+  WhyBlueprintCostsLess,
   Pricing,
   FAQ,
   FinalCTA,
@@ -32,31 +35,40 @@ export default function Home() {
         {/* Section 4: The Blueprint (offer) */}
         <Blueprint />
 
-        {/* Section 5: Why Three (mechanism) */}
+        {/* Section 5: Sample Outputs (example projects) */}
+        <SampleOutputs />
+
+        {/* Section 6: Why Three (mechanism) */}
         <WhyThree />
 
-        {/* Section 6: Inside the Blueprint (visual deliverable) */}
+        {/* Section 8: Inside the Blueprint (visual deliverable) */}
         <InsideBlueprint />
 
-        {/* Section 7: The 14 Days (process) */}
+        {/* Section 9: The 14 Days (process) */}
         <FourteenDays />
 
-        {/* Section 8: The Guarantee */}
+        {/* Section 10: The Guarantee */}
         <Guarantee />
 
-        {/* Section 9: Already Tried AI? (Pilot Autopsy) */}
-        <PilotAutopsy />
+        {/* Section 11: Comparison (without vs with) */}
+        <Comparison />
 
-        {/* Section 10: Who Built This (founder) */}
+        {/* Section 12: Who is this for (fit/not fit) */}
+        <WhoIsThisFor />
+
+        {/* Section 13: Who Built This (founder) */}
         <Founder />
 
-        {/* Section 11: Pricing */}
+        {/* Section 14: Why the Blueprint costs less than guessing */}
+        <WhyBlueprintCostsLess />
+
+        {/* Section 15: Pricing */}
         <Pricing />
 
-        {/* Section 12: FAQ */}
+        {/* Section 16: FAQ */}
         <FAQ />
 
-        {/* Section 13: Final CTA */}
+        {/* Section 17: Final CTA */}
         <FinalCTA />
       </main>
       <Footer />
