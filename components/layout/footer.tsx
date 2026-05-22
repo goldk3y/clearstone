@@ -1,15 +1,16 @@
 import Link from "next/link";
+import { siteConfig } from "@/content/home";
 
 const footerLinks = {
-  company: [
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
-    { href: "/blog", label: "Blog" },
+  services: [
+    { href: "#blueprint", label: "The Blueprint" },
+    { href: "#pricing", label: "Pricing" },
+    { href: "#process", label: "14-Day Process" },
   ],
   resources: [
-    { href: "#blueprint", label: "AI Blueprint" },
     { href: "#faq", label: "FAQ" },
-    { href: "/case-studies", label: "Case Studies" },
+    { href: "#pilot-autopsy", label: "Pilot Autopsy" },
+    { href: "#book", label: "Book a Call" },
   ],
   legal: [
     { href: "/privacy", label: "Privacy Policy" },
@@ -32,16 +33,15 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-body-sm max-w-xs">
-              AI implementation for mid-market operators. We map, build, and
-              hand over AI systems that actually move the needle.
+              A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back in your business.
             </p>
           </div>
 
-          {/* Company Links */}
+          {/* Services Links */}
           <div>
-            <h4 className="text-label mb-4">Company</h4>
+            <h4 className="text-label mb-4">Services</h4>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
+              {footerLinks.services.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -86,16 +86,24 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <p className="mt-4 text-caption">
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="hover:text-foreground transition-colors"
+              >
+                {siteConfig.email}
+              </a>
+            </p>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-caption">
-            &copy; {currentYear} ClearStone AI. All rights reserved.
+            &copy; {currentYear} ClearStone. All rights reserved.
           </p>
           <p className="text-caption">
-            Built for operators who ship.
+            Three bets. Fourteen days. Fixed fee.
           </p>
         </div>
       </div>

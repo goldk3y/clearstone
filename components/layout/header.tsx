@@ -5,13 +5,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { RiMenuLine, RiCloseLine } from "@remixicon/react";
-
-const navLinks = [
-  { href: "#industries", label: "Industries" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#blueprint", label: "Blueprint" },
-  { href: "#faq", label: "FAQ" },
-] as const;
+import { navigation } from "@/content/home";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,7 +23,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">
-            {navLinks.map((link) => (
+            {navigation.links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -42,8 +36,8 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden items-center gap-4 md:flex">
-            <Button asChild size="lg">
-              <Link href="#book">Book a Call</Link>
+            <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-brand-foreground">
+              <Link href={navigation.cta.href}>{navigation.cta.label}</Link>
             </Button>
           </div>
 
@@ -71,7 +65,7 @@ export function Header() {
           )}
         >
           <nav className="flex flex-col gap-4 pt-4">
-            {navLinks.map((link) => (
+            {navigation.links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -82,8 +76,8 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-4">
-              <Button asChild size="lg" className="w-full">
-                <Link href="#book">Book a Call</Link>
+              <Button asChild size="lg" className="w-full bg-brand hover:bg-brand/90 text-brand-foreground">
+                <Link href={navigation.cta.href}>{navigation.cta.label}</Link>
               </Button>
             </div>
           </nav>

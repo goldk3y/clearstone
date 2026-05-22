@@ -1,0 +1,13 @@
+export { Hero } from "./hero";
+export { Mirror } from "./mirror";
+export { Stakes } from "./stakes";
+export { Blueprint } from "./blueprint";
+export { WhyThree } from "./why-three";
+export { InsideBlueprint } from "./inside-blueprint";
+export { FourteenDays } from "./fourteen-days";
+export { Guarantee } from "./guarantee";
+export { PilotAutopsy } from "./pilot-autopsy";
+export { Founder } from "./founder";
+export { Pricing } from "./pricing";
+export { FAQ } from "./faq";
+export { FinalCTA } from "./final-cta";

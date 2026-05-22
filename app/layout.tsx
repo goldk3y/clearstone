@@ -25,37 +25,36 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "ClearStone AI | AI Implementation for Mid-Market Operators",
-    template: "%s | ClearStone AI",
+    default: "ClearStone | The 3-Bet AI Blueprint for Mid-Market Operators",
+    template: "%s | ClearStone",
   },
   description:
-    "Find the 3 AI investments that will pay back in 90 days. Or you don't pay. AI implementation consulting for mid-market operators ($25M-$250M revenue).",
+    "A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days in your business. For founder-led US companies, $25M–$100M.",
   keywords: [
     "AI consulting",
     "AI implementation",
     "mid-market AI",
-    "AI integration",
     "AI strategy",
-    "business AI",
-    "GenAI consulting",
     "AI ROI",
+    "3-Bet Blueprint",
+    "AI diagnostic",
   ],
-  authors: [{ name: "ClearStone AI" }],
-  creator: "ClearStone AI",
+  authors: [{ name: "ClearStone" }],
+  creator: "ClearStone",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://clearstoneai.com",
-    siteName: "ClearStone AI",
-    title: "ClearStone AI | AI Implementation for Mid-Market Operators",
+    siteName: "ClearStone",
+    title: "ClearStone | The 3-Bet AI Blueprint for Mid-Market Operators",
     description:
-      "Find the 3 AI investments that will pay back in 90 days. Or you don't pay. AI implementation consulting for mid-market operators.",
+      "A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days in your business. For founder-led US companies, $25M–$100M.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClearStone AI | AI Implementation for Mid-Market Operators",
+    title: "ClearStone | The 3-Bet AI Blueprint for Mid-Market Operators",
     description:
-      "Find the 3 AI investments that will pay back in 90 days. Or you don't pay.",
+      "A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days in your business.",
   },
   robots: {
     index: true,
