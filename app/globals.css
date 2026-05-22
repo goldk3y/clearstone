@@ -135,7 +135,7 @@
 
   /* H2 - Section titles (Poppins) */
   .text-h2 {
-    @apply font-heading text-2xl font-semibold leading-[1.2] tracking-tight sm:text-3xl md:text-4xl;
+    @apply font-heading text-3xl font-semibold leading-[1.2] tracking-tight md:text-4xl;
   }
 
   /* H3 - Subsection titles (Poppins) */

@@ -20,7 +20,7 @@ export function Founder({
   return (
     <Section id="founder" container="default" padding="default">
       <div className="mx-auto max-w-4xl">
-        <div className="grid gap-8 lg:grid-cols-12 lg:gap-12 lg:items-center">
+        <div className="grid gap-8 lg:grid-cols-12 lg:gap-12 lg:items-start">
           {/* Photo */}
           {photoUrl && (
             <div className="lg:col-span-5">

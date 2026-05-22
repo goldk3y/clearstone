@@ -10,25 +10,31 @@ export function FourteenDays() {
         </h2>
 
         {/* Timeline */}
-        <div className="space-y-0">
+        <div className="relative">
           {fourteenDays.steps.map((step, index) => (
             <div
               key={index}
-              className="grid grid-cols-[100px_1fr] gap-6 pb-10 last:pb-0 md:grid-cols-[140px_1fr] md:gap-10"
+              className="relative grid grid-cols-[auto_1fr] gap-4 pb-10 last:pb-0 md:grid-cols-[100px_auto_1fr] md:gap-6"
             >
-              {/* Day marker */}
-              <div className="relative">
-                <div className="sticky top-24 flex h-14 items-center justify-center border border-border bg-background px-4 whitespace-nowrap">
-                  <span className="text-label text-foreground">{step.day}</span>
-                </div>
-                {/* Connecting line */}
+              {/* Day label - hidden on mobile, shown on md+ */}
+              <div className="hidden md:flex items-start justify-end pt-0.5">
+                <span className="text-label text-foreground whitespace-nowrap">{step.day}</span>
+              </div>
+
+              {/* Dot and line */}
+              <div className="relative flex justify-center">
+                {/* Connecting line - starts from center of dot, extends full height of item */}
                 {index < fourteenDays.steps.length - 1 && (
-                  <div className="absolute left-1/2 top-14 h-full w-px -translate-x-1/2 bg-border" />
+                  <div className="absolute top-2 left-1/2 w-0.5 h-full -translate-x-1/2 bg-brand/30" />
                 )}
+                {/* Dot */}
+                <div className="relative z-10 h-4 w-4 shrink-0 rounded-full bg-brand ring-4 ring-muted" />
               </div>
 
               {/* Content */}
-              <div className="pt-3">
+              <div>
+                {/* Day label - shown on mobile only */}
+                <span className="text-label text-foreground mb-1 block md:hidden">{step.day}</span>
                 <h3 className="text-h4 mb-2 text-foreground">{step.title}</h3>
                 <p className="text-body max-w-lg">{step.description}</p>
               </div>

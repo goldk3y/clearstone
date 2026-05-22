@@ -18,12 +18,12 @@ export function Pricing() {
               className="border border-border bg-card p-8 sm:p-10"
             >
               <h3 className="text-h3 mb-4 text-foreground">{tier.name}</h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-foreground sm:text-5xl">
+              <div className="mb-6 flex flex-wrap items-baseline gap-x-2">
+                <span className="text-2xl font-bold text-foreground whitespace-nowrap sm:text-3xl md:text-4xl">
                   {tier.price}
                 </span>
                 {tier.priceNote && (
-                  <span className="ml-2 text-body text-muted-foreground">
+                  <span className="text-body text-muted-foreground">
                     {tier.priceNote}
                   </span>
                 )}

@@ -11,7 +11,7 @@ interface BlueprintPageProps {
 // High-fidelity McKinsey-style blueprint page previews
 function BlueprintPage({ title, caption, id }: BlueprintPageProps) {
   return (
-    <div className="group">
+    <div className="group w-[180px] shrink-0 sm:w-full">
       {/* Document mockup with professional consulting design */}
       <div className="relative aspect-[8.5/11] overflow-hidden border border-neutral-200 bg-white shadow-sm transition-all group-hover:border-brand/40 group-hover:shadow-md">
         {/* Document header */}
@@ -554,7 +554,7 @@ export function InsideBlueprint() {
         </p>
 
         {/* Blueprint pages gallery */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="flex gap-6 overflow-x-auto pb-4 sm:grid sm:grid-cols-2 sm:gap-8 sm:overflow-visible sm:pb-0 lg:grid-cols-3 xl:grid-cols-5">
           {insideBlueprint.pages.map((page) => (
             <BlueprintPage
               key={page.id}

@@ -22,7 +22,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="h-12 px-8 text-base bg-brand hover:bg-brand/90 text-brand-foreground"
+              className="w-full sm:w-auto h-12 px-8 text-base bg-brand hover:bg-brand/90 text-brand-foreground"
             >
               <Link href={siteConfig.calendlyUrl}>{hero.primaryCta}</Link>
             </Button>
@@ -30,7 +30,7 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="h-12 px-8 text-base"
+              className="w-full sm:w-auto h-12 px-8 text-base"
             >
               <Link href="#sample">{hero.secondaryCta}</Link>
             </Button>

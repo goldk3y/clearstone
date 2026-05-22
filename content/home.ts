@@ -14,7 +14,7 @@ export const siteConfig = {
 export const hero = {
   headline: "Three AI moves. Fourteen days. Fixed fee.",
   subheadline:
-    "A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days. With the workflows, vendors, and build plan to ship them.",
+    "A 14-day, fixed-fee diagnostic. Three AI investments most likely to pay back inside 90 days, with the workflows, vendors, and build plan to ship them.",
   primaryCta: "Find Your Three AI Moves",
   secondaryCta: "See a Sample Blueprint",
   qualifier: "For founder-led companies, $25M–$100M, with enough operational complexity that \"where do we start with AI\" is a real question.",
@@ -208,7 +208,7 @@ export const guarantee = {
 export const pilotAutopsy = {
   headline: "Already tried AI and got nowhere?",
   description:
-    "Send us the project. We'll write you a free Pilot Autopsy, a 30-minute analysis of what stalled and whether it's worth fixing, replacing, or killing.",
+    "Send us the project. We'll write you a free Pilot Autopsy. 30-minute analysis of what stalled and whether it's worth fixing, replacing, or killing.",
   note: "Most teams who hire us start here.",
   cta: "Request a Pilot Autopsy",
   formFields: {
@@ -246,7 +246,7 @@ export const founder: FounderData = {
 
 export const founderSection = {
   headline: "Built by an operator, not a deck shop.",
-  contrast: "Most AI strategy comes from people who've never shipped an AI product. I have.",
+  contrast: "AI consultants will give you a strategy deck based on a report they've read. I give you a build-ready blueprint engineered from firsthand experience.",
   closing: "When you hire ClearStone, you work directly with me. Same person on the kickoff, the Blueprint, and the build.",
   tagline: "No analysts. No handoffs. No recycled decks.",
 } as const;
@@ -274,7 +274,6 @@ export const pricing = {
     {
       name: "Implementation",
       price: "$15,000–$100,000",
-      priceNote: "per move",
       description:
         "Fixed-fee per move, scoped during the Blueprint. Most clients implement one or two; the third often gets handed to their team.",
     },
