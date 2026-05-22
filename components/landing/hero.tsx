@@ -15,7 +15,7 @@ export function Hero() {
           <div>
             {/* Eyebrow */}
             <p className="text-overline mb-6">
-              AI That Ships in 90 Days
+              AI That&apos;s Live in 90 Days
             </p>
 
             {/* Headline */}
@@ -24,10 +24,15 @@ export function Hero() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-body-lg mb-8 max-w-xl text-pretty">
+            <p className="text-body-lg mb-4 max-w-xl text-pretty">
               For mid-market operators tired of pilots that go nowhere. Book a
               30-minute call. Walk away with a prioritized opportunity list and
               a real number for what it would save.
+            </p>
+
+            {/* Guarantee clarifier */}
+            <p className="text-body-sm mb-8 max-w-xl text-muted-foreground">
+              If the 30-min call doesn&apos;t surface 3 high-confidence AI plays, the $2,500 Blueprint is free.
             </p>
 
             {/* CTAs */}
@@ -68,6 +73,7 @@ export function Hero() {
                 src="/site-images/hero-image.png"
                 alt="Business executive reviewing AI implementation results"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
                 priority
               />

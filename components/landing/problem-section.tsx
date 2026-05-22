@@ -11,7 +11,7 @@ const problems = [
     number: "02",
     title: "Your team is using ChatGPT in the shadows.",
     description:
-      "90% of workers use personal AI tools daily for job tasks. You can't govern it, you can't measure it, you can't capture the value.",
+      "MIT NANDA found that 90% of workers use personal AI tools daily for job tasks. You can't govern it, you can't measure it, you can't capture the value.",
   },
   {
     number: "03",
@@ -31,10 +31,10 @@ export function ProblemSection() {
             {/* Large stat */}
             <div className="mb-6">
               <span className="font-heading text-7xl font-bold tracking-tight text-foreground sm:text-8xl">
-                95%
+                ~95%
               </span>
               <p className="mt-2 text-body-lg text-pretty">
-                of GenAI pilots fail to deliver any P&L impact.
+                of GenAI pilots produce no measurable P&L impact, per MIT NANDA.
               </p>
             </div>
 

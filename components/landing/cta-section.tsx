@@ -1,22 +1,31 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { RiArrowRightLine } from "@remixicon/react";
+import { TrustBadges } from "./trust-badges";
 
 export function CTASection() {
   return (
     <section id="book" className="bg-foreground text-background">
       <div className="container-default section-py">
         <div className="mx-auto max-w-5xl text-center">
+          {/* Trust badges */}
+          <TrustBadges variant="inverted" className="mb-10" />
+
           {/* Headline */}
           <h2 className="font-heading text-3xl font-semibold leading-tight tracking-tight text-background sm:text-4xl md:text-5xl mb-4 text-balance">
-            Most operators could be running AI ROI within 60 days.
+            Most operators we work with have AI delivering measurable ROI within 90 days.
           </h2>
 
           {/* Subheadline */}
-          <p className="text-lg leading-relaxed text-background/70 mx-auto mb-10 max-w-2xl sm:text-xl text-pretty">
+          <p className="text-lg leading-relaxed text-background/70 mx-auto mb-6 max-w-2xl sm:text-xl text-pretty">
             The longer you wait, the more your competitors lap you. Book a
             30-minute call and walk away with a prioritized list of AI
             opportunities for your business.
+          </p>
+
+          {/* Scarcity signal */}
+          <p className="text-sm text-background/50 mb-10">
+            Currently accepting 6 Blueprint engagements per quarter.
           </p>
 
           {/* CTA */}

@@ -7,3 +7,6 @@ export { IndustrySection } from "./industry-section";
 export { BlueprintSection } from "./blueprint-section";
 export { FAQSection } from "./faq-section";
 export { CTASection } from "./cta-section";
+export { FounderSection } from "./founder-section";
+export { TrustBadges } from "./trust-badges";
+export { StickyCTA } from "./sticky-cta";

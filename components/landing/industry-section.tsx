@@ -1,21 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Section } from "@/components/layout";
+import {
+  RiBriefcaseLine,
+  RiShoppingBag3Line,
+  RiSettings3Line,
+  RiBankLine,
+} from "@remixicon/react";
 
 const industries = [
   {
     title: "Professional Services",
     subtitle: "Accounting, Legal, Consulting",
-    stat: "~360K hours saved annually",
+    stat: "40% faster document review",
     image: "/site-images/industry-professional-services.png",
     href: "/industries/professional-services",
+    Icon: RiBriefcaseLine,
   },
   {
     title: "E-commerce & Retail",
     subtitle: "$10M–$500M GMV",
-    stat: "700 FTE equivalent",
+    stat: "11 min to <2 min resolution",
     image: "/site-images/industry-ecommerce.png",
     href: "/industries/ecommerce-retail",
+    Icon: RiShoppingBag3Line,
   },
   {
     title: "Manufacturing",
@@ -23,13 +31,15 @@ const industries = [
     stat: "50% less downtime",
     image: "/site-images/industry-manufacturing.png",
     href: "/industries/manufacturing",
+    Icon: RiSettings3Line,
   },
   {
     title: "Financial Services",
     subtitle: "Banks, RIAs, Insurance",
-    stat: "2–4x more fraud detected",
+    stat: "2-4x more fraud detected",
     image: "/site-images/industry-financial.png",
     href: "/industries/financial-services",
+    Icon: RiBankLine,
   },
 ] as const;
 
@@ -61,7 +71,9 @@ export function IndustrySection() {
               src={industry.image}
               alt={industry.title}
               fill
+              sizes="(max-width: 640px) 280px, (max-width: 1024px) 50vw, 25vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
             />
 
             {/* Gradient overlay */}
@@ -74,10 +86,13 @@ export function IndustrySection() {
                 {industry.stat}
               </span>
 
-              {/* Title */}
-              <h3 className="text-h4 text-white mb-1">
-                {industry.title}
-              </h3>
+              {/* Title with icon */}
+              <div className="flex items-center gap-2 mb-1">
+                <industry.Icon className="size-5 text-white/80" />
+                <h3 className="text-h4 text-white">
+                  {industry.title}
+                </h3>
+              </div>
 
               {/* Subtitle */}
               <p className="text-sm text-white/70">

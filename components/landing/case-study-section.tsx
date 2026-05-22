@@ -11,7 +11,9 @@ export function CaseStudySection() {
             src="/site-images/case-study.png"
             alt="Klarna AI assistant interface showing multilingual support, payment management, and refund explanations"
             fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-contain"
+            loading="lazy"
           />
         </div>
 
@@ -61,6 +63,11 @@ export function CaseStudySection() {
           <p className="mt-8 text-caption text-pretty">
             This is the kind of AI transformation we help mid-market operators
             achieve, scaled to your business.
+          </p>
+
+          {/* Klarna footnote */}
+          <p className="mt-4 text-xs text-muted-foreground/70">
+            *Initial Klarna disclosures, 2024. Some figures revised in subsequent reporting.
           </p>
         </div>
       </div>

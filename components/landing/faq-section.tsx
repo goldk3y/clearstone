@@ -4,6 +4,7 @@ import { Section } from "@/components/layout";
 import { useState } from "react";
 import { RiAddLine, RiSubtractLine } from "@remixicon/react";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 
 const faqs = [
   {
@@ -30,12 +31,12 @@ const faqs = [
   {
     question: "What if you can't find 3 high-ROI opportunities in our business?",
     answer:
-      "Then you don't pay for the Blueprint. We've never had it happen, but it's our guarantee on every engagement.",
+      "Then you don't pay for the Blueprint. It's our guarantee on every engagement.",
   },
   {
     question: "Are we too small? Too big?",
     answer:
-      "Our sweet spot is companies doing $25M–$250M in annual revenue with 50–500 employees. Below that, we recommend off-the-shelf tools and our DIY AI Readiness Assessment (free). Above $500M, you likely need a Big Four firm or our enterprise referral partner.",
+      "Our sweet spot is companies doing $25M–$250M in annual revenue with 50–500 employees. Below that, we recommend off-the-shelf tools and our DIY AI Readiness Assessment (free). Above $500M, you likely need a Big Four firm. Happy to point you in the right direction.",
   },
   {
     question: "Will our data leave our environment?",
@@ -91,6 +92,20 @@ function FAQItem({
   );
 }
 
+// Generate FAQ schema for JSON-LD
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -100,6 +115,12 @@ export function FAQSection() {
 
   return (
     <Section id="faq" background="muted" padding="default">
+      {/* FAQ Schema for SEO */}
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
           <p className="text-overline mb-4">Questions & Answers</p>
@@ -128,7 +149,7 @@ export function FAQSection() {
         {/* Still have questions */}
         <p className="mt-8 text-center text-body text-pretty">
           Still have questions?{" "}
-          <a href="mailto:hello@clearstone.ai" className="link-default font-medium">
+          <a href="mailto:hello@clearstoneai.com" className="link-default font-medium">
             Email us
           </a>{" "}
           or{" "}

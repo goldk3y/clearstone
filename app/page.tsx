@@ -9,6 +9,8 @@ import {
   BlueprintSection,
   FAQSection,
   CTASection,
+  FounderSection,
+  StickyCTA,
 } from "@/components/landing";
 
 export default function Home() {
@@ -24,9 +26,11 @@ export default function Home() {
         <IndustrySection />
         <BlueprintSection />
         <FAQSection />
+        <FounderSection />
         <CTASection />
       </main>
       <Footer />
+      <StickyCTA />
     </>
   );
 }

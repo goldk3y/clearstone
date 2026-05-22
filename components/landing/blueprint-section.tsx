@@ -8,6 +8,7 @@ import {
   RiFileTextLine,
   RiTeamLine,
 } from "@remixicon/react";
+import { TrustBadges } from "./trust-badges";
 
 const blueprintIncludes = [
   "Executive-ready 30-page report",
@@ -100,9 +101,9 @@ export function BlueprintSection() {
                   Our guarantee:
                 </p>
                 <p className="mt-1 text-body-sm text-pretty">
-                  If, after the discovery call, you don&apos;t see at least 3
-                  high-confidence AI opportunities in your business, you
-                  don&apos;t pay for the Blueprint.
+                  If the 30-minute call doesn&apos;t surface 3 high-confidence AI
+                  plays for your business, we don&apos;t pitch you the Blueprint.
+                  You owe nothing.
                 </p>
               </div>
 
@@ -122,6 +123,14 @@ export function BlueprintSection() {
                   30 minutes. Free. No obligation.
                 </p>
               </div>
+
+              {/* Trust signals - show only SOC 2 and NDA */}
+              <TrustBadges
+                include={["soc2", "nda"]}
+                variant="muted"
+                className="mt-6 gap-4"
+                iconSize="size-3.5"
+              />
             </div>
 
             {/* Trust note */}

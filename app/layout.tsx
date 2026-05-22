@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://clearstone.ai",
+    url: "https://clearstoneai.com",
     siteName: "ClearStone AI",
     title: "ClearStone AI | AI Implementation for Mid-Market Operators",
     description:
@@ -77,6 +77,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("h-full", inter.variable, poppins.variable, cormorant.variable)}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-full flex flex-col font-sans antialiased">
         {children}
       </body>

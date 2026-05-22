@@ -1,11 +1,23 @@
 import Image from "next/image";
 import { Section } from "@/components/layout";
 
-const steps = [
+type ProcessStep = {
+  step: string;
+  title: string;
+  price: string;
+  priceSubtext: string | null;
+  description: string;
+  deliverable: string;
+  image: string;
+  imageAlt: string;
+};
+
+const steps: readonly ProcessStep[] = [
   {
     step: "01",
     title: "30-min AI Opportunity Call",
     price: "Free",
+    priceSubtext: null,
     description:
       "We map your top revenue and cost workflows and flag the 3 highest-ROI AI plays. No pitch, no pressure. Just clarity.",
     deliverable: "Prioritized opportunity list",
@@ -16,6 +28,7 @@ const steps = [
     step: "02",
     title: "The ClearStone Blueprint™",
     price: "$2,500",
+    priceSubtext: null,
     description:
       "Fixed-scope, 2-week deliverable: 3 prioritized opportunities with ROI models, vendor shortlist, and 90-day implementation plan.",
     deliverable: "30-page executive report",
@@ -26,13 +39,14 @@ const steps = [
     step: "03",
     title: "Implementation",
     price: "Starts at $15,000",
+    priceSubtext: "Typical range: $15,000–$45,000 depending on scope",
     description:
       "We build it with you or hand it off to your team. Most clients proceed because the Blueprint makes the ROI obvious.",
-    deliverable: "Working AI systems",
+    deliverable: "1–3 integrated AI workflows running in production. Includes monitoring, documentation, and team handoff.",
     image: "/site-images/dashboard.png",
     imageAlt: "AI automation dashboard showing real-time metrics, workflow performance, and integration health",
   },
-] as const;
+];
 
 export function ProcessSection() {
   return (
@@ -65,10 +79,17 @@ export function ProcessSection() {
                   {step.step}
                 </span>
 
-                <div className="flex items-baseline gap-4 mb-4">
+                <div className="flex items-baseline gap-4 mb-2">
                   <h3 className="text-h3 text-foreground text-balance">{step.title}</h3>
                   <span className="text-muted-foreground">{step.price}</span>
                 </div>
+
+                {step.priceSubtext ? (
+                  <p className="text-caption mb-4">{step.priceSubtext}</p>
+                ) : (
+                  <div className="mb-2" />
+                )}
+
                 <p className="text-body mb-4 max-w-md text-pretty">{step.description}</p>
 
                 <p className="text-label">
@@ -84,7 +105,9 @@ export function ProcessSection() {
                     src={step.image}
                     alt={step.imageAlt}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-contain"
+                    loading="lazy"
                   />
                 </div>
               </div>
