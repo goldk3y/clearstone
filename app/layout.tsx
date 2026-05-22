@@ -25,7 +25,7 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "ClearStone | The 3-Bet AI Blueprint for Mid-Market Operators",
+    default: "ClearStone | The 3-Move Blueprint for Mid-Market AI",
     template: "%s | ClearStone",
   },
   description:
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "mid-market AI",
     "AI strategy",
     "AI ROI",
-    "3-Bet Blueprint",
+    "3-Move Blueprint",
     "AI diagnostic",
   ],
   authors: [{ name: "ClearStone" }],
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://clearstoneai.com",
     siteName: "ClearStone",
-    title: "ClearStone | The 3-Bet AI Blueprint for Mid-Market Operators",
+    title: "ClearStone | The 3-Move Blueprint for Mid-Market AI",
     description:
       "A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days in your business. For founder-led US companies, $25M–$100M.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClearStone | The 3-Bet AI Blueprint for Mid-Market Operators",
+    title: "ClearStone | The 3-Move Blueprint for Mid-Market AI",
     description:
       "A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days in your business.",
   },

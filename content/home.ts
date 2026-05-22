@@ -12,12 +12,12 @@ export const siteConfig = {
 // Section 1: Hero
 // =============================================================================
 export const hero = {
-  headline: "Three AI bets. Fourteen days. Fixed fee.",
+  headline: "Three AI moves. Fourteen days. Fixed fee.",
   subheadline:
-    "ClearStone identifies the three AI investments most likely to pay back inside 90 days in your business, then delivers the workflows, vendor selections, ROI model, and build plan to execute them.",
-  primaryCta: "Find Your Three AI Bets",
+    "A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days. With the workflows, vendors, and build plan to ship them.",
+  primaryCta: "Find Your Three AI Moves",
   secondaryCta: "See a Sample Blueprint",
-  qualifier: "A fixed-fee diagnostic for founder-led companies, $25M–$100M revenue.",
+  qualifier: "For founder-led companies, $25M–$100M, with enough operational complexity that \"where do we start with AI\" is a real question.",
 } as const;
 
 // =============================================================================
@@ -39,7 +39,7 @@ export const stakes = {
   headline: "Most AI programs don't ship.",
   paragraphs: [
     "Of the companies that launched AI initiatives last year, only about 1 in 20 produced measurable P&L impact. The rest are stuck in pilot purgatory, vendor sprawl, or strategy decks nobody acts on.",
-    "The companies that crossed the line had one thing in common: they picked a small number of high-leverage workflows, built them, and shipped them. They didn't try to \"transform.\" They placed bets.",
+    "The companies that crossed the line had one thing in common: they picked a small number of high-leverage workflows, built them, and shipped them. They didn't try to \"transform.\" They made moves.",
   ],
   citation:
     "Sources: MIT NANDA, State of AI in Business 2025; McKinsey, State of AI 2025; BCG AI Radar 2026.",
@@ -49,18 +49,18 @@ export const stakes = {
 // Section 4: The Blueprint (Offer)
 // =============================================================================
 export const blueprint = {
-  headline: "The 3-Bet Blueprint",
+  headline: "The 3-Move Blueprint",
   description:
     "A 14-day, fixed-fee diagnostic that ends with three named AI investments, ranked by 90-day ROI, with the workflows, vendors, integration plan, and build roadmap to execute.",
   whatYouGet: {
     title: "What you get",
     items: [
-      "A 25–35 page Blueprint document, written for the CEO and CFO, with three prioritized bets",
+      "A 25–35 page Blueprint document, written for the CEO and CFO, with three prioritized moves",
       "Workflow-level diagrams of where AI fits in your current operation",
-      "Vendor-or-build recommendations for each bet, with named tools and dollar figures",
-      "A dollar ROI model per bet, savings, risk-adjusted, with assumptions you can audit",
-      "A 90-day implementation Gantt for each bet",
-      "A 60-minute walkthrough with you, your COO, and your CFO",
+      "Vendor-or-build recommendations for each move, with named tools and dollar figures",
+      "A risk-adjusted dollar ROI model per move, with assumptions you can audit",
+      "A 90-day implementation Gantt for each move",
+      "A 60-minute walkthrough with your leadership team",
       "A fixed-fee implementation proposal, valid for 30 days",
     ],
   },
@@ -79,7 +79,7 @@ export const blueprint = {
 // =============================================================================
 // Section 5: Why Three (Mechanism)
 // =============================================================================
-export interface WhyThreeBet {
+export interface WhyThreeMove {
   number: string;
   label: string;
   description: string;
@@ -90,24 +90,24 @@ export const whyThree = {
   headline: "Why three?",
   intro:
     "Not because three is a magic number. Because three is the smallest number that demonstrates a program, and the largest number a mid-market team can actually ship in 90 days.",
-  bets: [
+  moves: [
     {
       number: "One",
-      label: "bet",
+      label: "move",
       description: "isn't a strategy. It's a project.",
     },
     {
       number: "Five",
-      label: "bets",
+      label: "moves",
       description: "is a roadmap. Roadmaps don't ship.",
     },
     {
       number: "Three",
-      label: "bets",
-      description: "is what gets to your next board meeting with real numbers.",
+      label: "moves",
+      description: "ships, measures, and earns the next round.",
       emphasis: true,
     },
-  ] as WhyThreeBet[],
+  ] as WhyThreeMove[],
 } as const;
 
 // =============================================================================
@@ -120,8 +120,8 @@ export const insideBlueprint = {
     {
       id: "executive-summary",
       title: "Executive Summary",
-      caption: "Three bets named, dollar impact, timeline",
-      alt: "Blueprint executive summary page showing three prioritized AI bets with ROI figures",
+      caption: "Three moves named, dollar impact, timeline",
+      alt: "Blueprint executive summary page showing three prioritized AI moves with ROI figures",
     },
     {
       id: "workflow-diagram",
@@ -180,7 +180,7 @@ export const fourteenDays = {
       day: "Days 10–13",
       title: "Drafting",
       description:
-        "We write the Blueprint. Three bets. Workflows. Vendors. Dollar models. Implementation plans.",
+        "We write the Blueprint. Three moves. Workflows. Vendors. Dollar models. Implementation plans.",
     },
     {
       day: "Day 14",
@@ -197,8 +197,8 @@ export const fourteenDays = {
 export const guarantee = {
   headline: "If we can't find three, you don't pay.",
   paragraphs: [
-    "At the end of the diagnostic, if ClearStone has not identified three implementation-ready AI bets that pass your team's internal hurdle rate, the engagement fee is fully refunded.",
-    "No subjective satisfaction clause. No mood test. The bar is simple: three viable bets, or the fee is yours back.",
+    "At the end of the diagnostic, if ClearStone has not identified three implementation-ready AI moves that pass your team's internal hurdle rate, the engagement fee is fully refunded.",
+    "No subjective satisfaction clause. No mood test. The bar is simple: three viable moves, or the fee is yours back.",
   ],
 } as const;
 
@@ -237,7 +237,7 @@ export interface FounderData {
 export const founder: FounderData = {
   name: "Stan Sedberry",
   role: "Founder, ClearStone",
-  bio: "I built ClearStone because I kept seeing the same pattern: operators buying AI tools, watching pilots fizzle, and ending up more skeptical than when they started. The problem isn't AI. It's that most consultants sell strategy decks, not working systems. I've spent 10+ years shipping products and scaling businesses that drive real outcomes. Now I help operators do the same with AI.",
+  bio: "I'm Stan. I've spent the last decade designing, building, and shipping products. The last three of them building AI products and integrating AI into the businesses I run.",
   priorWork: [],
   credentials: [],
   photoUrl: "/site-images/founder-headshot.png",
@@ -246,8 +246,9 @@ export const founder: FounderData = {
 
 export const founderSection = {
   headline: "Built by an operator, not a deck shop.",
-  closing:
-    "When you hire ClearStone, the person on the Day 1 kickoff is the same person writing the Blueprint and the same person you call after it ships. No analysts. No handoffs.",
+  contrast: "Most AI strategy comes from people who've never shipped an AI product. I have.",
+  closing: "When you hire ClearStone, you work directly with me. Same person on the kickoff, the Blueprint, and the build.",
+  tagline: "No analysts. No handoffs. No recycled decks.",
 } as const;
 
 // =============================================================================
@@ -265,20 +266,20 @@ export const pricing = {
   headline: "Pricing",
   tiers: [
     {
-      name: "The 3-Bet Blueprint",
+      name: "The 3-Move Blueprint",
       price: "$15,000",
-      description: "Fixed fee. 14 days. One Blueprint, three bets, full deliverable.",
-      note: "The fee is 100% credited toward implementation if you choose to build any of the three bets with ClearStone.",
+      description: "Fixed fee. 14 days. Three moves, named and modeled.",
+      note: "The fee is 100% credited toward implementation if you choose to build any of the three moves with ClearStone.",
     },
     {
       name: "Implementation",
       price: "$15,000–$100,000",
-      priceNote: "per bet",
+      priceNote: "per move",
       description:
-        "Fixed-fee per bet, scoped during the Blueprint. Typical engagements run one to three bets, depending on complexity.",
+        "Fixed-fee per move, scoped during the Blueprint. Most clients implement one or two; the third often gets handed to their team.",
     },
   ] as PricingTier[],
-  cta: "Find Your Three AI Bets",
+  cta: "Find Your Three AI Moves",
 } as const;
 
 // =============================================================================
@@ -305,7 +306,7 @@ export const faq = {
     {
       question: "What if our highest-leverage opportunity isn't actually AI?",
       answer:
-        "We'll tell you. Two of the three bets in a typical Blueprint are usually narrow workflow automations, not LLM agents. If AI isn't the right answer at all, we'll say that before you pay for the Blueprint.",
+        "We'll tell you. Two of the three moves in a typical Blueprint are usually narrow workflow automations, not LLM agents. If AI isn't the right answer at all, we'll say that before you pay for the Blueprint.",
     },
     {
       question: "We already have a CTO / Head of AI. Where do you fit?",
@@ -330,7 +331,7 @@ export const faq = {
     {
       question: "What does implementation actually look like?",
       answer:
-        "Fixed-fee per bet, $15K–$100K depending on scope, with a defined timeline and acceptance criteria for each bet. We can build with your team, hand off to your team, or hand off to one of our certified implementation partners. Your call.",
+        "Fixed-fee per move, $15K–$100K depending on scope, with a defined timeline and acceptance criteria for each move. We can build with your team, hand off to your team, or hand off to one of our certified implementation partners. Your call.",
     },
     {
       question: "Can we share the Blueprint with our board?",
@@ -345,7 +346,7 @@ export const faq = {
     {
       question: "What if you can't find three opportunities in our business?",
       answer:
-        "Then you don't pay for the Blueprint. The bar is three implementation-ready bets that pass your team's internal hurdle rate.",
+        "Then you don't pay for the Blueprint. The bar is three implementation-ready moves that pass your team's internal hurdle rate.",
     },
   ],
   stillHaveQuestions: "Still have questions?",
@@ -355,7 +356,7 @@ export const faq = {
 // Section 13: Final CTA
 // =============================================================================
 export const finalCta = {
-  headline: "Find your three AI bets.",
+  headline: "Find your three AI moves.",
   description:
     "Book a 30-minute call. We'll figure out if a Blueprint is the right fit. If it isn't, we'll tell you that.",
   cta: "Book the Call",

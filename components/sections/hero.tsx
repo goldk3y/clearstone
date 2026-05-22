@@ -4,8 +4,8 @@ import { hero, siteConfig } from "@/content/home";
 
 export function Hero() {
   return (
-    <section className="relative">
-      <div className="container-default py-24 sm:py-32 md:py-40 lg:py-48">
+    <section className="relative min-h-[calc(100dvh-4rem)] flex items-center justify-center">
+      <div className="container-default py-12">
         <div className="mx-auto max-w-3xl text-center">
           {/* Headline */}
           <h1 className="text-display mb-8 text-foreground text-balance">

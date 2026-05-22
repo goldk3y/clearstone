@@ -47,8 +47,16 @@ export function Founder({
                 {bio}
               </p>
 
+              <p className="text-body-lg leading-relaxed text-pretty">
+                {founderSection.contrast}
+              </p>
+
               <p className="text-body leading-relaxed text-pretty">
                 {founderSection.closing}
+              </p>
+
+              <p className="text-body font-medium text-foreground">
+                {founderSection.tagline}
               </p>
             </div>
 

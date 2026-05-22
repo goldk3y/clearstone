@@ -103,7 +103,7 @@ export function Footer() {
             &copy; {currentYear} ClearStone. All rights reserved.
           </p>
           <p className="text-caption">
-            Three bets. Fourteen days. Fixed fee.
+            Three moves. Fourteen days. Fixed fee.
           </p>
         </div>
       </div>

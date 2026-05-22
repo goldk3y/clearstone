@@ -4,7 +4,7 @@ import { fourteenDays } from "@/content/home";
 export function FourteenDays() {
   return (
     <Section id="process" container="default" padding="default" background="muted">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-3xl">
         <h2 className="text-h2 mb-16 text-center text-foreground text-balance">
           {fourteenDays.headline}
         </h2>

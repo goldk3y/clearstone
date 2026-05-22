@@ -8,7 +8,7 @@ The rebuild is a strategic repositioning, not a redesign. Copy changes, structur
 
 ## 1. Strategic context (read this first)
 
-ClearStone is a productized AI diagnostic for founder-led US companies in the $25M–$100M revenue band. The product is the **3-Bet Blueprint**: a 14-day, fixed-fee written deliverable that names the three highest-ROI AI investments in the buyer's business and ships with workflows, vendor selections, ROI models, and a 90-day implementation plan per bet.
+ClearStone is a productized AI diagnostic for founder-led US companies in the $25M–$100M revenue band. The product is the **3-Move Blueprint**: a 14-day, fixed-fee written deliverable that names the three highest-ROI AI investments in the buyer's business and ships with workflows, vendor selections, ROI models, and a 90-day implementation plan per move.
 
 The market is at Schwartz sophistication Level 5 — every variant of generic AI consulting copy has been heard and discounted. The site wins by being:
 
@@ -53,7 +53,7 @@ The visitor lands believing AI matters but feeling overwhelmed and behind. The s
 - Hero headline, CTAs, qualifier line (verbatim copy below)
 - The "How It Works" 3-step section becomes "The 14 Days" with a different structure
 - Guarantee language (precise legal version provided below)
-- All pricing language: Blueprint $15K, Implementation $15K–$100K per bet
+- All pricing language: Blueprint $15K, Implementation $15K–$100K per move
 
 ### Hide but do not delete
 - `/industries/professional-services`, `/industries/ecommerce-retail`, `/industries/manufacturing`, `/industries/financial-services` — remove from nav, remove from homepage card grid, but keep the route files for future use. Add `noindex` meta to each for now.
@@ -96,11 +96,11 @@ For each section: the purpose, the verbatim copy, the design intent, and any tec
 
 **Copy:**
 
-> **Three AI bets. Fourteen days. Fixed fee.**
+> **Three AI moves. Fourteen days. Fixed fee.**
 >
 > ClearStone identifies the three AI investments most likely to pay back inside 90 days in your business — then delivers the workflows, vendor selections, ROI model, and build plan to execute them.
 >
-> [**Find Your Three AI Bets**] &nbsp; [See a Sample Blueprint]
+> [**Find Your Three AI Moves**] &nbsp; [See a Sample Blueprint]
 >
 > *A fixed-fee diagnostic for founder-led companies, $25M–$100M revenue.*
 
@@ -153,7 +153,7 @@ For each section: the purpose, the verbatim copy, the design intent, and any tec
 >
 > Of the companies that launched AI initiatives last year, only about 1 in 20 produced measurable P&L impact. The rest are stuck in pilot purgatory, vendor sprawl, or strategy decks nobody acts on.
 >
-> The companies that crossed the line had one thing in common: they picked a small number of high-leverage workflows, built them, and shipped them. They didn't try to "transform." They placed bets.
+> The companies that crossed the line had one thing in common: they picked a small number of high-leverage workflows, built them, and shipped them. They didn't try to "transform." They made moves.
 >
 > *Sources: MIT NANDA, State of AI in Business 2025; McKinsey, State of AI 2025; BCG AI Radar 2026.*
 
@@ -169,17 +169,17 @@ For each section: the purpose, the verbatim copy, the design intent, and any tec
 
 **Copy:**
 
-> ## The 3-Bet Blueprint
+> ## The 3-Move Blueprint
 >
 > A 14-day, fixed-fee diagnostic that ends with three named AI investments, ranked by 90-day ROI, with the workflows, vendors, integration plan, and build roadmap to execute.
 >
 > ### What you get
 >
-> - A 25–35 page Blueprint document, written for the CEO and CFO, with three prioritized bets
+> - A 25–35 page Blueprint document, written for the CEO and CFO, with three prioritized moves
 > - Workflow-level diagrams of where AI fits in your current operation
-> - Vendor-or-build recommendations for each bet, with named tools and dollar figures
-> - A dollar ROI model per bet — savings, risk-adjusted, with assumptions you can audit
-> - A 90-day implementation Gantt for each bet
+> - Vendor-or-build recommendations for each move, with named tools and dollar figures
+> - A dollar ROI model per move — savings, risk-adjusted, with assumptions you can audit
+> - A 90-day implementation Gantt for each move
 > - A 60-minute walkthrough with you, your COO, and your CFO
 > - A fixed-fee implementation proposal, valid for 30 days
 >
@@ -208,11 +208,11 @@ For each section: the purpose, the verbatim copy, the design intent, and any tec
 >
 > Not because three is a magic number. Because three is the smallest number that demonstrates a program — and the largest number a mid-market team can actually ship in 90 days.
 >
-> **One bet** isn't a strategy. It's a project.
+> **One move** isn't a strategy. It's a project.
 >
-> **Five bets** is a roadmap. Roadmaps don't ship.
+> **Five moves** is a roadmap. Roadmaps don't ship.
 >
-> **Three bets** is what gets to your next board meeting with real numbers.
+> **Three moves** is what gets to your next board meeting with real numbers.
 
 **Design:**
 - Treat the numeral "3" as a brand element. Large, confident, possibly with a custom display treatment.
@@ -233,7 +233,7 @@ For each section: the purpose, the verbatim copy, the design intent, and any tec
 
 Then below, **five visual blocks** showing pages from a redacted sample Blueprint:
 
-1. **Executive summary page** — three bets named, dollar impact, timeline
+1. **Executive summary page** — three moves named, dollar impact, timeline
 2. **Workflow diagram page** — before/after of one workflow
 3. **Vendor analysis page** — three vendors evaluated against criteria
 4. **ROI model page** — assumptions, sensitivities, 90-day curve
@@ -272,7 +272,7 @@ For initial deploy:
 >
 > **Days 6–9 — Analysis.** We model the candidates. We pressure-test vendor options. We build the ROI cases.
 >
-> **Days 10–13 — Drafting.** We write the Blueprint. Three bets. Workflows. Vendors. Dollar models. Implementation plans.
+> **Days 10–13 — Drafting.** We write the Blueprint. Three moves. Workflows. Vendors. Dollar models. Implementation plans.
 >
 > **Day 14 — Walkthrough.** 60 minutes with you and your team. The Blueprint is yours.
 
@@ -294,9 +294,9 @@ For initial deploy:
 
 > ## If we can't find three, you don't pay.
 >
-> At the end of the diagnostic, if ClearStone has not identified three implementation-ready AI bets that pass your team's internal hurdle rate, the engagement fee is fully refunded.
+> At the end of the diagnostic, if ClearStone has not identified three implementation-ready AI moves that pass your team's internal hurdle rate, the engagement fee is fully refunded.
 >
-> No subjective satisfaction clause. No mood test. The bar is simple: three viable bets, or the fee is yours back.
+> No subjective satisfaction clause. No mood test. The bar is simple: three viable moves, or the fee is yours back.
 
 **Design:**
 - Stand-alone section with visual weight. Not a footnote, not buried in the offer section.
@@ -366,17 +366,17 @@ For initial deploy:
 
 > ## Pricing
 >
-> ### The 3-Bet Blueprint — $15,000
+> ### The 3-Move Blueprint — $15,000
 >
-> Fixed fee. 14 days. One Blueprint, three bets, full deliverable.
+> Fixed fee. 14 days. One Blueprint, three moves, full deliverable.
 >
-> The fee is 100% credited toward implementation if you choose to build any of the three bets with ClearStone.
+> The fee is 100% credited toward implementation if you choose to build any of the three moves with ClearStone.
 >
-> ### Implementation — $15,000–$100,000 per bet
+> ### Implementation — $15,000–$100,000 per move
 >
-> Fixed-fee per bet, scoped during the Blueprint. Typical engagements run one to three bets, depending on complexity.
+> Fixed-fee per move, scoped during the Blueprint. Typical engagements run one to three moves, depending on complexity.
 >
-> [**Find Your Three AI Bets**]
+> [**Find Your Three AI Moves**]
 
 **Design:**
 - Two pricing cards or a clean two-row layout.
@@ -403,7 +403,7 @@ For initial deploy:
    Most AI automation agencies sell tools first and figure out the problem second. We do the opposite — diagnose the three highest-ROI workflows in your business first, then recommend build-or-buy. If the right answer is "buy this $400/month tool and wire it up," we say so.
 
 4. **What if our highest-leverage opportunity isn't actually AI?**
-   We'll tell you. Two of the three bets in a typical Blueprint are usually narrow workflow automations, not LLM agents. If AI isn't the right answer at all, we'll say that before you pay for the Blueprint.
+   We'll tell you. Two of the three moves in a typical Blueprint are usually narrow workflow automations, not LLM agents. If AI isn't the right answer at all, we'll say that before you pay for the Blueprint.
 
 5. **We already have a CTO / Head of AI. Where do you fit?**
    We work with them, not around them. The Blueprint typically gives your CTO the prioritization artifact they've been trying to write for six months while running everything else.
@@ -418,7 +418,7 @@ For initial deploy:
    Yes, with appropriate controls. Standard mutual NDA on call one. Full DPA before any data review. We work in your environment — your AWS/Azure/GCP, your CRM, your data warehouse. We don't take custody of your data.
 
 9. **What does implementation actually look like?**
-   Fixed-fee per bet, $15K–$100K depending on scope, with a defined timeline and acceptance criteria for each bet. We can build with your team, hand off to your team, or hand off to one of our certified implementation partners. Your call.
+   Fixed-fee per move, $15K–$100K depending on scope, with a defined timeline and acceptance criteria for each move. We can build with your team, hand off to your team, or hand off to one of our certified implementation partners. Your call.
 
 10. **Can we share the Blueprint with our board?**
     Yes. The Blueprint is written for the CEO and CFO to share with the board. Several sections are explicitly built for board-meeting use.
@@ -427,7 +427,7 @@ For initial deploy:
     That's a normal outcome. About a third of Blueprint clients implement with us, a third implement with their own team, and a third implement with a hybrid. The Blueprint is yours either way.
 
 12. **What if you can't find three opportunities in our business?**
-    Then you don't pay for the Blueprint. The bar is three implementation-ready bets that pass your team's internal hurdle rate.
+    Then you don't pay for the Blueprint. The bar is three implementation-ready moves that pass your team's internal hurdle rate.
 
 **Design:**
 - Accordion or expandable rows. Keep answers tight (2–4 sentences max).
@@ -441,7 +441,7 @@ For initial deploy:
 
 **Copy:**
 
-> ## Find your three AI bets.
+> ## Find your three AI moves.
 >
 > Book a 30-minute call. We'll figure out if a Blueprint is the right fit. If it isn't, we'll tell you that.
 >
@@ -499,7 +499,7 @@ For initial deploy:
 - Keep route files in place for future use.
 
 ### Meta tags
-- Update homepage `<title>`: `ClearStone | The 3-Bet AI Blueprint for Mid-Market Operators`
+- Update homepage `<title>`: `ClearStone | The 3-Move Blueprint for Mid-Market AI`
 - Update meta description: `A 14-day, fixed-fee diagnostic that names the three AI investments most likely to pay back inside 90 days in your business. For founder-led US companies, $25M–$100M.`
 - Update OG title/description to match.
 - Resolve domain inconsistency: og:url currently says `clearstone.ai` but live site is `clearstoneai.com`. Pick one and align everything (meta tags, internal links, canonical).
@@ -524,9 +524,9 @@ Before considering the rebuild done, verify each of these:
 
 3. **No dead phrases.** Search the site for every instance of: "AI transformation," "AI-powered," "next-generation," "cutting-edge," "unlock the power of AI," "game-changer," "AI-first," "AI-native," "transform your business," "future of work," "operationalize," "10x." Remove or rewrite all instances.
 
-4. **Pricing is correct everywhere.** No `$2,500` anywhere on the site. Blueprint is `$15,000`. Implementation is `$15,000–$100,000 per bet`. Verify in: hero, Blueprint section, Pricing section, FAQ.
+4. **Pricing is correct everywhere.** No `$2,500` anywhere on the site. Blueprint is `$15,000`. Implementation is `$15,000–$100,000 per move`. Verify in: hero, Blueprint section, Pricing section, FAQ.
 
-5. **Guarantee language is precise.** The phrase "three implementation-ready bets that pass your team's internal hurdle rate" appears verbatim in the Guarantee section.
+5. **Guarantee language is precise.** The phrase "three implementation-ready moves that pass your team's internal hurdle rate" appears verbatim in the Guarantee section.
 
 6. **The number 3 is a visual anchor.** It appears prominently in: hero, Why Three section, Pricing section, Final CTA.
 
@@ -549,7 +549,7 @@ Before considering the rebuild done, verify each of these:
 - Never use "unlock," "supercharge," "10x," "game-changing," "revolutionary," or "cutting-edge."
 - Never use "AI-powered [anything]."
 - Avoid the phrase "next-generation" or "future of [anything]."
-- Numbers always specific: "three bets," "14 days," "$15,000" — never "a few," "around two weeks," "affordable."
+- Numbers always specific: "three moves," "14 days," "$15,000" — never "a few," "around two weeks," "affordable."
 - Read every sentence out loud. If it would sound dumb said to a CFO, cut it.
 
 ---
